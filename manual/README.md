@@ -2,7 +2,7 @@
 # Planos de sessão:
 
 
-### [Sessão 1 - 06/04/2026](manual/sessao1_06042026.md)
+### [Sessão 1 - 06/04/2026](sessao1_06042026.md)
 
 * **Duração:** 3h
 * **Objetivos da sessão:**
