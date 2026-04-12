@@ -1,22 +1,21 @@
 
 ## Índice
 
-  
-
 - [Planos de sessão](#planos-de-sessão)
-
-  - [Sessão 1 – 06/04/2026](#sessão-1---06042026)
-
-  - [Sessão 2 – 08/04/2026](#sessão-2---08042026)
-
-``
-
+	- [Sessão 1 – 06/04/2026](#sessão-1---06042026)
+	- [Sessão 2 – 08/04/2026](#sessão-2---08042026)
+	- [Sessão 3 – 13/04/2026](#sessão-3---13042026)
+	- [Sessão 4 – 15/04/2026](#sessão-4---15042026)
+	- [Sessão 5 – 20/04/2026](#sessão-5---20042026)
+	- [Sessão 6 – 22/04/2026](#sessão-6---22042026)
+	- [Sessão 7 – 27/04/2026](#sessão-7---27042026)
 
 ## Planos de sessão:
 
+#### Sessão 1 - 06/04/2026
 
-#### [Sessão 1 - 06/04/2026](sessao1_06042026.md)
-
+* **Conteúdos do Manual:**
+	* [Módulo 0 - Ambiente Tecnológico e Instalação de Ferramentas](sessao1_06042026.md)
 * **Duração:** 3h
 * **Objetivos da sessão:**
 	* Apresentar a disciplina, metodologia de trabalho e calendário.
@@ -37,8 +36,12 @@
 	* Preparação do ambiente de trabalho (2:00 h)
 	* Encerramento da sessão (10 min)
 
-#### [Sessão 2 - 08/04/2026](sessao2_08042026.md)
+#### Sessão 2 - 08/04/2026
 
+* **Conteúdos do Manual**:
+	* [Módulo 1 - Noções Básicas de Scripting](sessao2_08042026_modulo1.md)
+	* [Módulo 2 - Utilização de linhas de comando](sessao2_08042026_modulo2.md)
+	* [Módulo 3 - Comandos básicos em bash](sessao2_08042026_modulo3)
 * **Duração:** 3h
 * **Objetivos da sessão:
 	* Compreender a relevância do scripting e os seus principais contextos de utilização;
@@ -54,3 +57,38 @@
 	* **Atividade 1 — Introdução à Linha de Comandos** (60 min)
 	* **Apresentações e discussão** (45 min)
 	* **Encerramento da sessão** (5 min)
+
+#### [Sessão 3 - 13/04/2026](sessao3_13042026.md)
+
+* **Conteúdos do Manual**:
+	* [Módulo 2 - Utilização de linhas de comando](sessao2_08042026_modulo2.md)
+	* [Módulo 3 - Comandos básicos em bash](sessao2_08042026_modulo3)
+	* [Módulo 3 - Apêndice sobre GIT](sessao3_13042026_modulo3)
+* **Duração:** 3h
+* **Objetivos da sessão:**
+	* **Sistematizar e consolidar** os conteúdos explorados na Atividade 1, relativos à utilização da linha de comandos;
+	* - Garantir que todos os participantes compreendem os **comandos fundamentais de navegação e manipulação de ficheiros** em Bash;
+	* Introduzir, de forma estruturada, os princípios essenciais da **gestão de permissões**, incluindo o papel do `sudo`, `chmod` e `chown`;
+	* Apresentar o **Git enquanto sistema de gestão de versões**, explicando a sua função no desenvolvimento moderno;
+	* Estabelecer a relação entre **Git** e plataformas como GitHub;
+	* Explorar, de forma colaborativa, os passos necessários para:
+	    - criar um repositório Git,
+	    - criar e gerir _branches_ (main, feature branches, etc.),
+	    - adicionar ficheiros e registar alterações.
+- **Agenda detalhada:**
+	- **Revisão e sistematização dos conteúdos da Atividade 1** (20 min)
+	- **Comandos básicos em Bash: síntese estruturada** (40 min)
+	- **GIT: fundamentos, enquadramento e demonstração do fluxo de trabalho com GIT** (50 min)
+	- **Atividade 2 - Trabalho orientado com Git** (50 min)
+	- **Encerramento da sessão** (5 min)
+
+#### [Sessão 4 - 15/04/2026](sessao4_15042026.md)
+
+
+#### [Sessão 5 - 20/04/2026](sessao5_20042026.md)
+
+
+#### [Sessão 6 - 22/04/2026](sessao6_22042026.md)
+
+#### [Sessão 7 - 27/04/2026](sessao7_27042026.md)
+
