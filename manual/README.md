@@ -62,8 +62,8 @@
 
 * **Conteúdos do Manual**:
 	* [Módulo 2 - Utilização de linhas de comando](sessao2_08042026_modulo2.md)
-	* [Módulo 3 - Comandos básicos em bash](sessao2_08042026_modulo3)
-	* [Módulo 3 - Apêndice sobre GIT](sessao3_13042026_modulo3)
+	* [Módulo 3 - Comandos básicos em bash](sessao2_08042026_modulo3.md)
+	* [Módulo 3 - Apêndice sobre GIT](sessao3_13042026_modulo3.md)
 * **Duração:** 3h
 * **Objetivos da sessão:**
 	* **Sistematizar e consolidar** os conteúdos explorados na Atividade 1, relativos à utilização da linha de comandos;
