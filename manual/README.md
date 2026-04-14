@@ -1,4 +1,15 @@
 
+
+# Planeamento das Sessões e manual
+
+## Disciplina
+
+### Linguagens de Scripting e Linha de Comandos 
+ ___________________________________
+  
+Este documento apresenta o planeamento detalhado das sessões da formação, incluindo conteúdos abordados, objetivos pedagógicos e agenda de trabalho de cada sessão.
+____________________________
+
 ## Índice
 
 - [Planos de sessão](#planos-de-sessão)
@@ -9,6 +20,8 @@
 	- [Sessão 5 – 20/04/2026](#sessão-5---20042026)
 	- [Sessão 6 – 22/04/2026](#sessão-6---22042026)
 	- [Sessão 7 – 27/04/2026](#sessão-7---27042026)
+
+__________________________________
 
 ## Planos de sessão:
 
@@ -83,6 +96,31 @@
 	- **Encerramento da sessão** (5 min)
 
 #### [Sessão 4 - 15/04/2026](sessao4_15042026.md)
+
+* **Conteúdos do Manual:**
+	* [Módulo 4 – Acesso remoto e servidores](sessao4_15042026_modulo4.md)
+	* [Módulo 5 - VIM](sessao4_15042026_modulo5.md)
+* **Duração:** 3h
+* **Objetivos da sessão:**
+	* Introduzir o conceito de **servidor remoto**;
+	* Compreender as **diferenças entre acesso gráfico e acesso via linha de comandos** a servidores;
+	* Apresentar os **princípios básicos de segurança** associados ao acesso remoto a servidores;
+	* Demonstrar o uso da linha de comandos para:
+		* aceder a um servidor remoto através de `ssh`,
+		* transferir ficheiros com `scp`,
+		* editar ficheiros em ambiente remoto;
+	* Consolidar a linha de comandos como ferramenta central de trabalho em ambientes técnicos e profissionais.
+* **Agenda detalhada:**
+	* Conclusão da atividade iniciada na sessão anterior e discussão dos resultados. (60 min)
+	* **Enquadramento: acesso a computadores remotos (10 min)
+	* **Acesso a servidores remotos** (20 min)
+		* Acesso gráfico (WinSCP, FileZilla)
+		* Acesso via linha de comandos
+		* Vantagens e limitações de cada abordagem
+	* **Demonstração prática: SSH** (20 min)
+	* **Demonstração prática: SCP** (20 min)
+	* **VIM:** demonstração prática (45 min)
+	* **Encerramento da sessão** (5 min)
 
 
 #### [Sessão 5 - 20/04/2026](sessao5_20042026.md)
