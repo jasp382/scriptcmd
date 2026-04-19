@@ -109,7 +109,7 @@ __________________________________
 		* aceder a um servidor remoto através de `ssh`,
 		* transferir ficheiros com `scp`,
 		* editar ficheiros em ambiente remoto;
-	* Consolidar a linha de comandos como ferramenta central de trabalho em ambientes técnicos e profissionais.
+	* Consolidar os **fundamentos de utilização do VIM**, com foco na edição eficiente de ficheiros em ambiente terminal;
 * **Agenda detalhada:**
 	* Conclusão da atividade iniciada na sessão anterior e discussão dos resultados. (60 min)
 	* **Enquadramento: acesso a computadores remotos (10 min)
@@ -125,8 +125,56 @@ __________________________________
 
 #### [Sessão 5 - 20/04/2026](sessao5_20042026.md)
 
+* ***Conteúdos do Manual**:
+	* [Módulo 1 - Noções Básicas de Scripting](sessao2_08042026_modulo1.md)
+	* [Módulo 2 - Utilização de linhas de comando](sessao2_08042026_modulo2.md)
+	* [Módulo 3 - Comandos básicos em bash](sessao2_08042026_modulo3)
+* **Duração:** 3h
+* **Objetivos da sessão:**
+	* Desenvolver competências ao nível da programação com Bash através da resolução de exercícios práticos;
+	* Aplicar de forma integrada conhecimentos de **linha de comandos e scripting em Bash**;
+* **Agenda detalhada**:
+	* Continuação e consolidação de VIM (30 min)
+	* Apresentação da Atividade 3 (15 min)
+	* Realização da atividade em grupo (80 min)
+	* Apresentação dos resultados pelos grupos (50 min)
+	* Encerramento da sessão (5 min)
+
 
 #### [Sessão 6 - 22/04/2026](sessao6_22042026.md)
 
+* **Conteúdos do Manual:**
+	* [Módulo 7 - Web Scraping com Python](sessao6_22042026_modulo7.md)
+* **Duração:** 3h
+* **Objetivos da sessão:**
+	* Compreender o conceito de **Web Scraping** e o seu enquadramento no ecossistema Python;
+	- Distinguir **Web Scraping de APIs** e clarificar contextos de utilização de cada abordagem;
+	- Identificar **boas práticas e limitações** associadas à recolha automática de dados da Web;
+	- Demonstrar o uso de bibliotecas Python para Web Scraping;
+	- Desenvolver competências práticas na **extração e tratamento básico de informação proveniente de páginas Web**;
+	- Aplicar os conhecimentos adquiridos através da **resolução de exercícios práticos orientados**.
+- **Agenda detalhada:**
+	- Enquadramento teórico: o que é Web Scraping? (20 min)
+	- Tecnologias e ferramentas Python para Web Scraping (20 min)
+	- Demonstração prática: Web Scraping com Python (40 min)
+	- Exercícios práticos orientados (70 min)
+	- Discussão e síntese dos resultados (20 min)
+	- Encerramento da sessão (10 min)
+
 #### [Sessão 7 - 27/04/2026](sessao7_27042026.md)
 
+* **Conteúdos do Manual:**
+	* [Módulo 8 - Acesso a dados através de APIs](sessao7_27042026_modulo8.md)
+* **Duração:** 3h
+* **Objetivos da sessão:**
+	* Compreender o que é uma **API** e o seu papel na disponibilização de dados;
+	- Demonstrar a utilização de **Python para efetuar pedidos a APIs** e processar as respostas;
+	- Desenvolver competências práticas na **recolha, tratamento e armazenamento de dados obtidos via APIs**;
+	- Aplicar os conceitos adquiridos através da **resolução de exercícios práticos orientados**.
+- **Agenda detalhada:**
+	- Enquadramento teórico: o que são APIs? (20 min)
+	- Princípios básicos de comunicação com APIs (20 min)
+	- Demonstração prática: consumo de uma API com Python (40 min)
+	- Exercícios práticos orientados (70 min)
+	- Discussão e síntese dos resultados (20 min)
+	- Encerramento da sessão (10 min)

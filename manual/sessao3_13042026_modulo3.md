@@ -37,25 +37,115 @@ O repositório remoto serve, então, como “local de encontro” onde todos os 
 
 ____________________
 
-## 3. Gestão de branches: organizar o desenvolvimento
+## 3. Lógica de trabalho com GIT
 
-Um dos conceitos centrais do Git é o de **branch**, uma espécie de linha paralela de desenvolvimento onde podemos trabalhar sem interferir com o trabalho principal da equipa. O branch é uma metáfora útil: representa um ramo que cresce a partir do tronco principal do projeto.
+O Git assenta numa sequência simples e repetível, independentemente da plataforma:
+
+1. **Clonar** o repositório remoto para a máquina local.
+2. **Criar um branch** novo para trabalhar numa tarefa específica.
+3. **Adicionar alterações** e registar _commits_, cada um descrevendo uma etapa.
+4. **Enviar o branch para o repositório remoto**.
+5. **Pedir a integração** das alterações (pull/merge request).
+6. **Fundir (merge)** o branch na `main` após revisão.
+7. **Eliminar** branches antigos para manter o repositório limpo.
+
+Tudo isto acontece sem nunca perder o histórico e com a possibilidade de regressar a qualquer ponto anterior. O Git funciona como uma verdadeira máquina do tempo para o código — uma que permite avançar, recuar e criar linhas paralelas de evolução sem risco de perder trabalho.
+
+_____________________________
+
+## 4. Boas práticas na escrita de mensagens de commit
+
+Os commits são um elemento central no trabalho com Git. Após realizarmos alterações ao código, temos de as submeter, e isso implica necessariamente realizar um **commit**.
+
+Cada _commit_ representa um **marco na evolução do projeto**. Para além das alterações ao código, o Git regista também uma **mensagem associada ao commit**, que desempenha um papel fundamental na compreensão do histórico do repositório.
+
+Uma boa mensagem de commit permite que qualquer pessoa — incluindo o próprio autor, no futuro — perceba rapidamente **o que foi alterado e porquê**, sem necessidade de analisar o código em detalhe.
+
+#### **Porque são importantes as mensagens de commit**
+
+As mensagens de commit são importantes porque:
+
+- documentam a evolução do projeto;
+- facilitam a revisão de código;
+- permitem identificar rapidamente quando e onde uma alteração foi introduzida;
+- tornam o histórico do repositório legível e útil;
+- ajudam a resolver problemas e regressões.
+
+Um histórico com mensagens claras é um sinal de **profissionalismo e cuidado técnico**.
+
+#### **Características de uma boa mensagem de commit**
+
+Uma boa mensagem de commit deve ser:
+
+- **Clara** — descrever objetivamente a alteração realizada;
+- **Concisa** — direta, sem informação irrelevante;
+- **Específica** — indicar exatamente o que mudou;
+- **Orientada à ação** — focada na alteração introduzida.
+
+Sempre que possível, a mensagem deve responder à pergunta:
+
+> _O que faz esta alteração?_
+
+#### **Exemplos de boas mensagens**
+
+- `Corrige validação de inputs no formulário de login`
+- `Adiciona script Bash para processamento de logs`
+- `Remove ficheiros temporários desnecessários`
+- `Atualiza documentação sobre configuração do ambiente`
+
+#### **Exemplos de más mensagens**
+
+- `Update`
+- `Fix`
+- `Alterações`
+- `Agora funciona`
+- `Teste`
+
+Mensagens genéricas tornam o histórico pouco informativo e dificultam o trabalho colaborativo.
+
+#### **Boas práticas gerais**
+
+- Fazer _commits_ pequenos e frequentes, cada um representando uma alteração coerente;
+- Evitar agrupar múltiplas alterações não relacionadas no mesmo commit;
+- Escrever mensagens que façam sentido para outros membros da equipa;
+- Pensar no commit como uma unidade lógica de trabalho.
+
+________________________________
+
+## 4. Gestão de branches: organizar o desenvolvimento
+
+Um dos conceitos centrais do Git é o de **branch**, uma espécie de **linha paralela de desenvolvimento**. Cada branch permite trabalhar de forma isolada sobre uma funcionalidade, correção ou preparação de versão, sem afetar diretamente o estado estável do projeto. Assim,  podemos trabalhar sem interferir com o trabalho principal da equipa. O branch é uma metáfora útil: representa um ramo que cresce a partir do tronco principal do projeto.
+
+A utilização de branches não é apenas uma funcionalidade técnica do Git, mas sim um **mecanismo de organização do trabalho**, particularmente importante em contextos colaborativos.
 
 ##### **A branch principal: main**
 
-Tradicionalmente, o ramo principal chamava‑se `master`, mas por motivos de alinhamento terminológico e boas práticas modernas passou a chamar‑se **`main`** na maioria dos projetos.
+A branch **main** representa o estado **estável e oficial** do projeto. É a versão do código que, em princípio, se encontra pronta para uso, distribuição ou produção.
 
-A `main` representa:
+Características da `main`:
 
-- o estado “oficial” ou “estável” do projeto;
-- o código que, em princípio, pode ser lançado para produção;
-- o ponto de referência a partir do qual todos os outros branches derivam.
+- contém código estável e validado;
+- deve estar sempre funcional;
+- não deve receber trabalho experimental ou incompleto;
+- serve como referência para todo o projeto.
 
-A `main` deve manter‑se limpa, coerente e funcional. Alterações arriscadas, experimentais ou não testadas não devem ser feitas diretamente nela.
+Alterações diretas na `main` devem ser excecionais e cuidadosamente controladas.
+
+##### **Branch de desenvolvimento: develop**
+
+Em projetos com maior complexidade, é comum existir uma branch intermédia chamada **develop**.
+
+A branch `develop`:
+
+- representa a **linha de desenvolvimento contínuo**;
+- agrega funcionalidades já concluídas, mas ainda não estabilizadas;
+- serve de base para a criação de novas branches de funcionalidade.
+
+Enquanto a `main` reflete o estado estável, a `develop` reflete o estado mais recente do desenvolvimento.
 
 ##### **Branches de desenvolvimento: feature branches**
 
-Quando queremos implementar algo novo — uma funcionalidade, uma correção, uma melhoria — criamos uma **feature branch**. Esta abordagem permite que cada alteração seja desenvolvida de forma isolada, sem afetar o funcionamento do projeto nem interferir com o trabalho dos outros.
+As **feature branches** são utilizadas para desenvolver **novas funcionalidades**, melhorias ou tarefas específicas. Quando queremos implementar algo novo — uma funcionalidade, uma correção, uma melhoria — criamos uma **feature branch**. Esta abordagem permite que cada alteração seja desenvolvida de forma isolada, sem afetar o funcionamento do projeto nem interferir com o trabalho dos outros.
 
 Um fluxo típico é este:
 
@@ -72,31 +162,41 @@ Um fluxo típico é este:
 5. Se estiver tudo aprovado, a branch é integrada na `main`.
     
 
-Este modelo — bastante simples na sua essência — evita conflitos desnecessários, facilita revisões de código e mantém o histórico organizado.
+Características das feature branches:
 
+- seguem normalmente a convenção `feature/nome-da-funcionalidade`;
+- são criadas a partir da branch `develop`;
+- permitem trabalhar de forma isolada sobre uma tarefa concreta;
+- são fundidas de volta para `develop` quando a funcionalidade está concluída.
 
-##### **Branches de manutenção: bugfix, hotfix e outros**
+Este modelo reduz conflitos, facilita revisões de código e torna o histórico do projeto mais claro e compreensível.
 
-Para além das feature branches, existem padrões usados por equipas maiores:
+##### **Release branches**
 
-- **bugfix** — para corrigir defeitos identificados;
-- **hotfix** — para resolver urgências diretamente ligadas à produção;
-- **release branches** — para estabilizar versões prestes a ser lançadas.
+As **release branches** são utilizadas quando se inicia a fase de **preparação de uma nova versão estável** do software.
 
-Embora cada equipa adapte esta estrutura às suas necessidades, o princípio é sempre o mesmo: separar o trabalho em linhas paralelas que depois convergem de forma controlada para o ramo principal.
+A branch `release`:
+
+- é criada a partir de `develop`;
+- serve para testes finais, correções menores e ajustes de versão;
+- não deve incluir novas funcionalidades;
+- após estabilização, é fundida na `main` e na `develop`.
+
+Este mecanismo permite separar claramente o desenvolvimento contínuo da fase de estabilização.
+
+##### **Visão geral: Git Flow**
+
+O modelo descrito — conhecido como **Git Flow** — define um conjunto coerente de práticas para organizar o desenvolvimento em projetos com múltiplas pessoas e versões.
+
+Em síntese:
+
+- `main` → código estável
+- `develop` → desenvolvimento contínuo
+- `feature/*` → novas funcionalidades
+- `release/*` → preparação de versões
+
+Embora nem todos os projetos necessitem de aplicar integralmente este modelo, compreender o Git Flow ajuda a perceber **como o trabalho é organizado em contextos profissionais reais**, mesmo quando se utiliza uma versão simplificada.
+
 
 _______________ 
 
-## 3. Lógica de trabalho com GIT
-
-O Git assenta numa sequência simples e repetível, independentemente da plataforma:
-
-1. **Clonar** o repositório remoto para a máquina local.
-2. **Criar um branch** novo para trabalhar numa tarefa específica.
-3. **Adicionar alterações** e registar _commits_, cada um descrevendo uma etapa.
-4. **Enviar o branch para o repositório remoto**.
-5. **Pedir a integração** das alterações (pull/merge request).
-6. **Fundir (merge)** o branch na `main` após revisão.
-7. **Eliminar** branches antigos para manter o repositório limpo.
-
-Tudo isto acontece sem nunca perder o histórico e com a possibilidade de regressar a qualquer ponto anterior. O Git funciona como uma verdadeira máquina do tempo para o código — uma que permite avançar, recuar e criar linhas paralelas de evolução sem risco de perder trabalho.
