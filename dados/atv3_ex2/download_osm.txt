@@ -1,0 +1,11 @@
+https://download.geofabrik.de/south-america/uruguay-latest.osm.pbf
+https://download.geofabrik.de/europe/liechtenstein-latest.osm.pbf
+https://download.geofabrik.de/europe/portugal-latest.osm.pbf
+https://download.geofabrik.de/africa/djibouti-latest.osm.pbf
+https://download.geofabrik.de/south-america/guyana-latest.osm.pbf
+https://download.geofabrik.de/europe/georgia-latest.osm.pbf
+https://download.geofabrik.de/africa/benin-latest.osm.pbf
+https://download.geofabrik.de/europe/kosovo.html
+https://download.geofabrik.de/south-america/suriname-latest.osm.pbf
+https://download.geofabrik.de/europe/luxembourg-latest.osm.pbf
+https://download.geofabrik.de/africa/namibia-latest.osm.pbf
