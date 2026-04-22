@@ -4,12 +4,7 @@
 # Verificação de argumentos
 # ============================
 
-if [ $# -ne 1 ]; then
-  echo "Uso: $0 pasta_destino ficheiro_com_urls"
-  exit 1
-fi
-
-if [ $# -ne 2]; then
+if [ $# -ne 2 ]; then
   echo "Uso: $0 pasta_destino ficheiro_com_urls"
   exit 1
 fi
