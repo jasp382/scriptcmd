@@ -5,12 +5,17 @@
 # ============================
 
 if [ $# -ne 1 ]; then
-  echo "Uso: $0 pasta_destino"
+  echo "Uso: $0 pasta_destino ficheiro_com_urls"
+  exit 1
+fi
+
+if [ $# -ne 2]; then
+  echo "Uso: $0 pasta_destino ficheiro_com_urls"
   exit 1
 fi
 
 DESTINO="$1"
-URL_FILE="download_osm.txt"
+URL_FILE="$2"
 
 # ============================
 # Verificações iniciais
@@ -44,6 +49,8 @@ while read -r URL; do
 
   # Descarregar ficheiro para a pasta correta
   echo "⬇ A descarregar para $CONTINENTE:"
+  echo "$URL"
+  echo "$DESTINO/$CONTINENTE"
   wget -q -P "$DESTINO/$CONTINENTE" "$URL"
 
 done < "$URL_FILE"

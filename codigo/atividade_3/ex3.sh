@@ -1,9 +1,17 @@
 #!/bin/bash
 
 # ============================
+# Verificação de argumentos
+# ============================
+if [ $# -ne 1 ]; then
+  echo "Uso: $0 users_file"
+  exit 1
+fi
+
+# ============================
 # Ficheiro de entrada
 # ============================
-USER_FILE="users.txt"
+USER_FILE="$1"
 
 # ============================
 # Verificações iniciais

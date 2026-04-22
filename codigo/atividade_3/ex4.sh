@@ -5,7 +5,7 @@
 # ============================
 
 DIRECTORIOS=(
-  "/home"
+  #"/home"
   "/var/log"
   "/tmp"
   "/backup"
