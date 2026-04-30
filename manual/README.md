@@ -141,7 +141,7 @@ __________________________________
 	* Encerramento da sessão (5 min)
 
 
-#### [Sessão 6 - 22/04/2026](sessao6_22042026.md)
+#### [Sessão 6 - 22/04/2026](sessao6_22042026_modulo6.md)
 
 * **Conteúdos do Manual:**
 	* [Módulo 7 - Web Scraping com Python](sessao6_22042026_modulo7.md)
